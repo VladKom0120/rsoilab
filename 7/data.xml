@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="actorsPage.xsl"?>
+
+<workers>
+    <work>
+        <name> Петр Иванов</name>
+        <ad>Беды 4</ad>
+        <age>25</age>
+        <role>Менеджер</role>
+    </work>
+</workers>

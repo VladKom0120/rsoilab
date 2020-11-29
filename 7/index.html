@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>7 лаба</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="error" style="display:none;">
+    <input type="button" id="reload" value="Reload" onclick="location.reload();">
+    <input type="button" id="errorPage" value="Show error" onclick="window.location.replace('error.html');"> 
+</div>
+
+<form>
+    <div>
+        <p><label>Имя и фамилия </label><input type="text" id="nameInput"/></p>
+        <p><label>Адрес </label><input type="text" id="adInput"/></p>
+        <p><label>Возраст </label><input type="text" id="ageInput"/></p>
+        <p><label>Должность </label><input type="text" id="roleInput"/></p>
+    </div>
+
+    <input type="radio" name="rdDate" value="14"/><label style="font-size: 11px;">14</label>
+    <input type="radio" name="rdDate" value="16"/><label style="font-size: 11px;">16</label>
+    <input type="radio" name="rdDate" value="18"/><label style="font-size: 11px;">18</label>
+    <div>
+        <input type="button" class="button" id="firstBTN" value="jQuery.post">
+        <input type="button" class="button" id="secondBTN" name="send-info" value="GIV">
+        <input type="button" class="button" id="thirdBTN" value="unvisible">
+        <input type="button" class="button" id="forthBTN" value="Кнопка 4">
+    </div>
+
+    <div id="remote"></div>
+
+    <div id="remote2"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    </form>
+</body>
+</html>

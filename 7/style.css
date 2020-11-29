@@ -1,0 +1,32 @@
+.button {
+	outline: none;
+	display: inline-block;
+	width: 120px;
+	height: 35px;
+	border-radius: 45px;
+	margin: 5px 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 600;
+	color: black;
+	background: white;
+	box-shadow: 0 8px 15px rgba(0,0,0,.1);
+	transition: .3s;
+  }
+  .button:hover {
+	background: rgb(223, 249, 144);
+	color: white;
+	transform: translateY(-7px);
+  }
+
+  form {
+	text-align: center;
+	font-family: 'Neucha', cursive;
+	font-size: 25px;
+  }
+
+  body {
+	background: rgb(222, 255, 193);
+  }
