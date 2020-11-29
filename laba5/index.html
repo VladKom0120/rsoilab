@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>lab5</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body onload="loadTable()">
+        <div class="main">
+
+            <h2>Группы студентов</h2>
+
+            <form method="post" onsubmit="addGroup()">
+
+                <div id="mainInfo">
+                  <b style="position: absolute; left: 0; top: 0; color: white; font-size: 24px;">773901 Сидоров В.А.</b>
+
+                    <input type="text" placeholder="Номер группы" id="groupNumber" name="groupNumber"><br><br>
+
+                    <label for="course">Курс</label>
+                    <select id="course" name="course">
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                        <option value="III">III</option>
+                        <option value="IV">IV</option>
+                    </select><br><br>
+
+                    <label for="faculty">Факультет</label>
+                    <select id="faculty" name="faculty">
+                        <option value="ФКП">ФКП</option>
+                        <option value="ФИТУ">ФИТУ</option>
+                        <option value="ФРЭ">ФРЭ</option>
+                        <option value="ФКСИС">ФКСИС</option>
+                        <option value="ФИК">ФИК</option>
+                        <option value="ИЭФ">ИЭФ</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="studentQuantity">Количество учащихся</label>
+                    <input  type="number" id="studentQuantity" name="studentQuantity" min="1" max="30" required><br><br>
+                    <input type="email" placeholder="Адрес эл. почты группы" id="email" name="email" required><br><br>
+                    <button type="button" id="addInfo" onclick="addNewProperties()">Другие поля</button>
+                </div>
+                <br>
+                <br>
+                <button type="submit" name="submit">Отправить</button>
+                <button type="reset" name="reset">Сбросить</button><br><br>
+            </form>
+
+            <label for="groupID">Удалить по ID</label>
+            <select id="groupID" name="groupID">
+            </select>
+            <button type="button" name="submit" onclick="deleteGroup(); loadTable()">Удалить</button>
+            <br>
+            <br>
+            <button type="button" name="submit" onclick="sortGroup()">Меньше 20 студентов</button>
+            <br>
+            <br>
+            <table id="groupTable" border="1" cellpadding="5" style="width: 100%">
+                <tr id="groupProperties">
+                    <th>ID</th>
+                    <th>Номер группы</th>
+                    <th>Курс</th>
+                    <th>Факультет</th>
+                    <th>Кол-во учащихся</th>
+                    <th>E-mail группы</th>
+                </tr>
+            </table>
+
+        </div>
+</body>
+</html>

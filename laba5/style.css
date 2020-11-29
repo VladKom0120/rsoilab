@@ -1,0 +1,53 @@
+body {
+    color: #384047;
+    background: url("background.jpg");
+    background-size: cover;
+    font-family: Arial, serif;
+}
+
+.main {
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    padding: 20px;
+    background: rgb(134,143,149);
+    background: linear-gradient(150deg, rgba(134,143,149,1) 0%, rgba(162,174,179,1) 22%, rgba(190,205,212,1) 59%, rgba(204,215,219,1) 100%);
+    border: 5px solid #384047;
+    width: 60%;
+}
+
+td:hover {
+  color: white;
+}
+
+button, select {
+    outline: none;
+    background: #384047;
+    height: 30px;
+    color: #C2D0D6;
+    text-align: center;
+    font-size: 16;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: white;
+}
+
+select:hover {
+    color: white;
+}
+
+input {
+    color: #384047;
+    border: 2px solid #384047;
+    outline: none;
+    border-radius: 5px;
+    height: 20px;
+    background: #C2D0D6;
+    padding-left: 5px;
+}
+
+input:focus {
+    background: white;
+}
