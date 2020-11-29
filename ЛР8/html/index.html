@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/style.css"><link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+<script src="../js/script.js"></script>
+<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+
+<script data-main="../js/config.js" src="../js/require.js"></script>
+
+<title>Company</title>
+
+<script>
+	reSelect();
+</script>
+</head>
+
+<body>
+	<table>
+		<th>
+	<form>
+		<p>Сотрудник:
+			<select id="name"></select></p>
+		<p>Разряд:
+			<select id="category" size="1">
+				<option value="4.18">1</option>
+				<option value="3.62">2</option>
+				<option value="3.13">3</option>
+				<option value="2.71">4</option>
+			</select></p>
+
+		<p>Коррект. коэфф.: <input type="textarea" id="rate"></p>
+
+		<p><input type="checkbox" id="hosp"  value="hosp">
+			<span onclick="CheckClick(this)">Больничный лист</span></p>
+
+
+        <p><input type="button" value="Сохранить данные" id="saveData"
+				  onclick="showSalary($('select#name').val(),$('select#category').val(),$('#hosp').prop('checked'),$('#rate').val());"></p>
+
+		<p><input type="button" value="Инфо о сотрудниках" onclick="showInfo($('select#name').val());" id="i"></p>
+	</form>
+		</th>
+		<th>
+
+	<table id="Show_Sotr"></table>
+		</th>
+	</table>
+</body>
+</html>

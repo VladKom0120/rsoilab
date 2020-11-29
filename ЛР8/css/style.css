@@ -1,0 +1,58 @@
+body {
+    color: black;
+	text-align: left;
+    font-size: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+form{
+  margin: 20px;
+}
+
+
+
+input, select{
+  display: inline-block;
+  font-weight: 700;
+  padding: .5em 2em;
+  border: 2px solid;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+table{
+    width: 910px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+th, td
+{
+	border-color: black;
+	border-style: solid;
+}
+
+#tr_first{
+    background-color: lightblue;
+    color: white;
+}
+
+#tr_last{
+    background-color: lightblue;
+    color: white;
+}
+
+#average{
+    background-color: lightblue;
+    color:red;
+}
+
+
+table #infoblock {
+    width: 300px;
+    right: 5%;
+    font-size: 18pt;
+}
